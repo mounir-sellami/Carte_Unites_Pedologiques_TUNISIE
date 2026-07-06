@@ -1,0 +1,1 @@
+﻿{"identifier": "name","items" : [{"name":"Clear Selection","value":"MVClearSelection1"},{"name":"CALSISOL"},{"name":"CAMBISOL"},{"name":"FLUVISOL"},{"name":"GLEYSOL"},{"name":"GYPSISOL"},{"name":"KASTANOZEM"},{"name":"LEPTOSOL"},{"name":"LUVISOL"},{"name":"ND"},{"name":"REGOSOL"},{"name":"SOLONCHAK"},{"name":"SOLONETZ"},{"name":"VERTISOL"}]}

@@ -1,0 +1,478 @@
+*:focus {
+  outline: none;
+}
+html, body, #MVpreloader {
+  /* do not delete */
+  width:100%; height:100%;
+  margin:0; padding:0;
+}
+@media screen and (max-width: 640px), screen and (max-device-width: 640px) {
+  body {
+    font-size:85%;
+  }
+}
+@media screen and (min-width: 640px), screen and (min-device-width: 640px) {
+  body {
+    font-size:75%;
+  }
+}
+body {
+  background-color:moccasin;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:normal;
+  color:#000000;
+}
+.fa {color:  #241C0F;}
+.fa-envelope {color: #FFCC00;}
+.fa-facebook-official {color: #3B579D;}
+.fa-google-plus {color: #DD4E42;}
+.fa-twitter {color: #00ACED;}
+.dijitTab:not(.dijitTabChecked) .fa {color: #7A7A7A;}
+.dijitTab:hover .fa {color: black;}
+.MVfa-but {
+  font-size: 1.5em;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  padding: 4px;
+}
+#MVpreloader {
+  background-color:      moccasin;
+  position: absolute;
+  z-index:999;
+}
+#MVpreloader section.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#MVpreloader .preloaderIn {
+  color: #000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+h1 { font-size:    2rem;font-weight:bold;margin-top:0px;margin:7px }
+h1.subtext { font-size:1.2rem;margin-top:0px;margin:7px }
+h1.print { font-size:1.2rem; margin:0 }
+h2 { font-size:1.2rem;font-weight:bold }
+h3 { font-weight:bold;margin-bottom:7px }
+a { color:blue;text-decoration:none }
+a:hover { color:#C29B69 }
+.formElem { background-color:moccasin }
+p.siteinfo,li.siteinfo {
+  font-size:0.8rem;line-height:11px;margin-top:0px;margin-bottom:7px
+}
+#MVmassstab {
+  white-space: nowrap;
+  outline: none;
+  width:150px;
+}
+.MVtbButton { margin:0px }
+.MVtbButton:hover { background-color:#D3D3D3 }
+.MVtbButton2 { border: 1px solid darkgrey}
+.MVtbButtonMob { margin:0px; background-color:#FFEDCD;}
+.MVtbButtonMob:active { background-color:#D3D3D3 }
+.MVtoolbarSeparator { margin-left:10px}
+#MVborderContainer {
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
+}
+#MVtitle {
+  background-color:moccasin;
+  color:#000;
+  padding:0 !important;
+  margin:0 3px 0 3px;
+  overflow:hidden;
+}
+#MVtoolbar {
+  background-color:#FFEDCD;
+  padding: 0;
+  margin-bottom: 3px;
+  overflow: hidden;
+}
+/* IE10 Hack for MVtoolbar.fullscreen*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  #MVtoolbar\.fullscreen {visibility: hidden;}
+}
+@media print {
+  @page {
+    size: A4 landscape;
+    margin:0;
+  }
+  #MVprintButton {display: none;}
+}
+#MVmainSite {
+  background-color:moccasin;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+#MVtabContainer {
+  width:24%;
+  margin-left:3px;
+  margin-bottom:3px;
+}
+#MVtbSmartphone {
+  position:absolute;
+  margin:10px;
+  padding:4px;
+  background-color:#EFD09F;
+  }
+.MVident {
+  min-width:365px;
+}
+.MVmap { padding:0 !important;border:0px solid #C29B69 }
+#MVoverviewFrame { position:absolute;margin:4px;z-index:2;background-color:#fff; }
+.flat #MVoverviewFrame .dijitTitlePaneContentInner {
+  padding:2px 2px 0 2px;
+}
+.flat .dijitContentPane {background: none;}
+.flat .MVselLabel .dijitSelectLabel { text-align:left;height:1.2em}
+.flat .MVselLabel .dijitButtonContents { max-width:310px;overflow:hidden}
+.flat .dijitTabListWrapper {
+  height: 40px !important;
+  background-color: #EFD09F;
+  border:1px solid #EFD09F;
+  border-bottom:0;
+}
+.MVcheckBut {
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  margin: 0;
+}
+.flat .MVcheckBut .dijitButtonNode {
+  border: 0px;
+  background: none;
+  box-shadow: none;	
+}
+.flat .dijitSplitContainer-dijitContentPane, .flat .dijitBorderContainer-dijitContentPane, .flat .dijitBorderContainer, .flat .dijitSplitterV, .flat .dijitGutterV, .flat .dijitSplitContainer-child, .flat .dijitBorderContainer-child {
+  background: none;
+  padding:0;
+}
+.flat .MVtbButton .dijitButtonNode, .flat .MVtbButtonMob .dijitButtonNode{
+  border: 0px;
+  background:none;
+  box-shadow:none;
+  padding:10px;
+}
+.flat .dijitMapViewIcon, .flat .MVSmartIcon {
+  background: url("../pictures/toolbar.png") no-repeat scroll 0 center;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  margin: 4px;
+}
+.flat .MVSmartIcon {
+  margin: 5px;
+}
+.flat .dijitMapViewIconLine { background-position: -252px; }
+.flat .dijitMapViewIconArea { background-position: -270px; }
+.flat .dijitMapViewIconSum { background-position: -288px; }
+.flat .dijitMapViewIconDistanceLocationToPOI { background-position: -702px; }
+.flat .dijitMapViewIconRouteLocationToPOI  { background-position: -720px; }
+#MVqueryFP .dojoxFloatingPaneCanvas {
+  max-width:100% !important;
+  max-height:100% !important;
+}
+.flat .dijitTextBox #MVshowKoord { width:180px;text-align: center;padding:3px; }
+.flat .dijitTabContainerTop-dijitContentPane, .flat .dijitAccordionContainer-dijitContentPane {
+  padding-top:20px;
+  padding-left:10px;
+  padding-right:10px;
+  background-color:#FFEDCD;
+}
+.flat .dijitBorderContainer-dijitContentPane {
+  background-color:moccasin;
+  border:0px;
+}
+.flat .dijitAccordionTitle {
+  color:#7A7A7A;
+  border:0;
+  border-bottom:1px solid #FFEDCD;
+  background:#EFD09F none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flat .dijitAccordionTitle:hover {
+  color:black;
+  border:0;
+  border-bottom:1px solid #FFEDCD;
+  background-color:#EFD09F;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flat .dijitAccordionTitleSelected,.flat .dijitAccordionTitleSelected:hover {
+  height:21px !important;
+  color:black !important;
+  border:0;
+  border-bottom:1px solid #EFD09F;
+  background-color:#FFEDCD !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flat .dijitAccordionChildWrapper {
+  border:0;
+}
+.flat .dijitTab {
+  background:#EFD09F none;
+  color:#7A7A7A;
+  height:19px !important;
+  border:0;
+  margin-top:0px;
+  padding-top:11px !important;
+  padding-bottom:11px !important;
+}
+.flat .dijitTab:hover {
+  background-color:#EFD09F;
+  color:black;
+  border:0;
+  margin-top:0px;
+  padding-top:11px !important;
+  padding-bottom:11px !important;
+}
+.flat .dijitTabChecked, .flat .dijitTabChecked:hover {
+  background-color:#FFEDCD !important;
+  color:black;
+  border:0;
+  margin-top:0px;
+  padding-top:11px !important;
+  padding-bottom:11px !important;
+}
+.flat .dijitTabContainerTop-tabs .dijitTabChecked:before {
+  background-color:#FFEDCD !important;
+}
+.flat .dijitTabContainerTop-tabs {
+  padding:0;
+  border:0;
+}
+.flat .dijitTabContainerTop-spacer {
+  height: 0;
+  border:0;
+}
+.flat .dijitTabPaneWrapper {
+  top:44px !important;
+  border:0;
+  -webkit-border-radius: 0;
+  border-radius:  0;
+}
+.flat .dijitTitlePaneContentOuter {
+  background:none;
+  border:1px solid #EFD09F;
+  overflow:auto;
+}
+.flat .dijitTitlePaneTitle, .flat .dojoxFloatingPaneTitle, .flat .dijitDialogTitleBar {
+  color:#7A7A7A;
+  background:#EFD09F none;
+  border:1px solid #EFD09F;
+  margin-top:1px;
+}
+.flat .dijitDialogCloseIcon {
+  margin-top:6px;
+}
+#MVzoomObjects * .dijitTitlePaneTitle  {
+  color:black;
+  background:#E8E8E8 none;
+  border-style:solid solid none solid;
+}
+.flat .dojoxFloatingPane {
+  padding: 3px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow:5px 5px 20px #666;
+  background-color:#FFEDCD;
+}
+.flat .dijitDialog {
+  padding: 3px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow:5px 5px 20px #666;
+  background-color:#FFEDCD;
+}
+.flat .dojoxFloatingPaneCanvas {
+  width:100% !important;
+  height:100% !important;
+  max-width:350px !important;
+  max-height:550px !important;
+  overflow:auto;
+  background-color:#FFEDCD;
+}
+.flat .dojoxFloatingPaneContent {
+  background-color:#FFEDCD;
+  overflow:visible;
+}
+.MVoSlider {
+  margin: 5px 10px 15px 14px;
+  width: 25%;
+}
+.flat .dijitSliderImageHandle::after {
+  background: gray !important;
+}
+.flat  .dijitSliderHover.dijitSliderProgressBarH, .flat  .dijitSliderHover.dijitSliderLeftBumper {
+  background-color: gray !important;
+}
+.flat .dijitPopup > .dijitContentPane {
+  background:#FFEDCD;
+}
+.MVlegendButton { margin:0 !important; }
+.flat .MVlegendButton .dijitButtonNode {
+  padding: 0.0em;
+}
+.MVlegC {
+  position:relative;
+  margin-bottom:0;
+}
+.MVcheckBut {
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  margin: 0;
+}
+.flat .MVcheckBut .dijitButtonNode {
+  border: 0px;
+  background: none;
+  box-shadow: none;	
+}
+.MVleg {
+  position:relative;
+  margin-left:30px;
+  overflow:visible;
+}
+.flat .MVleg .dijitTitlePaneTitle  {
+  color:black;
+  background:none;
+  border:0;
+  padding-bottom:8px;
+  padding-top:8px;
+  margin-right:40px;
+  text-indent:-8px;
+  margin-left:8px;
+}
+.flat .MVleg .dijitTitlePaneContentOuter {
+  background:none;
+  margin-left:22px;
+  border:0;
+  overflow:visible;
+}
+.flat .MVleg .dijitTitlePaneContentInner {
+  background:none;
+  padding:0;
+}
+table.identify {
+  table-layout: fixed;
+  min-width:280px;
+  width:100%;
+  margin-top:10px;
+  border-collapse:collapse;
+  border:#C29B691px solid;
+  background-color:white;
+}
+.identify td:nth-child(1) { max-width:75%; width: auto; overflow:hidden;word-break:break-all; }
+h1.identify { font-weight:bold;margin-top:20px }
+td.identify,p.identify,a.identify,a.identify:hover { font-size:0.8em }
+th.identify,td.identify,td.identifyPic {  border:silver 1px dotted;padding:3px }
+th.identifyNoBorder,td.identifyNoBorder,td.identifyPicNoBorder {
+  border:0 none;
+}
+th.identify { font-weight:bold;text-align:left;vertical-align:bottom;white-space:nowrap;background-color:#EFD09F }
+td.identifyPic { text-align:center }
+td.identify { vertical-align:top }
+table.identify .imgClose { padding-bottom:3px;padding-right:3px }
+table.identify .imgTable {width: 100%; max-width:240px; display:block;}
+.flat .tableFP .dojoxFloatingPaneCanvas {
+  max-width:800px !important;
+  max-height:550px !important;
+}
+.flat .tableFP .dojoxFloatingPaneTitle {
+  margin-bottom:5px;
+}
+#MVtableContent { margin: 0 5px 5px 5px; }
+.recCloseBtn {margin-left: 10px; display: none;}
+table.recTable { border:#C29B69 2px solid;border-collapse:collapse;empty-cells:show;width:100% }
+.recTable td { padding:3px; border:1px solid #C29B69;vertical-align:top }
+th, td.recTable { font-weight:bold;text-align:left;vertical-align:top;background-color:#EFD09F;border:none;border-left:#C29B69 1px solid;padding:3px }
+table.recTable .imgTable {width: auto; height: auto; max-height:70px}
+table.recTable .imgTableTop { border:none }
+table.recTable .imgAsc { margin-top:4px;margin-left:0px;margin-right:5px;border:1px solid #C29B69;width:16px;height:16px}
+.recTableBGAlter { background-color:white }
+.flat .MVqInput { width:100%; padding-top:2px padding-bottom:2px;}
+#MVrectableContent {
+  margin: 0 25px 5px 5px;
+}
+table.query  {
+  border:#C29B69 2px solid;
+  padding:6px;
+  margin-top:10px;
+  border-spacing:5px;
+}
+td.query { padding:0px;border:none }
+.query0 .dijitButtonNode { width:2.6em }
+tr.query { vertical-align:top }
+select.query { width:100%; min-width:130px; font-size:1em; }
+/* media query magic */
+body:after {
+  content:'screen';
+  display:none;
+}
+@media screen and (min-width: 1200px) {
+  body:after {
+    content:'screen';
+    display: none;
+  }
+  #MVtbSmallScreen,#MVtbSmartphone,#MVLegSmartphone{
+    display:none;
+  }
+}
+@media screen and (max-width:1200px){
+  body:after {
+    content:'smallscreen';
+    display:none;
+  }
+  #MVtabContainer, #MVtabContainer_splitter, #MVborderTabContainer, #MVborderTabContainer_splitter, #MVtitle, #MVtbSmartphone,#MVLegSmartphone {
+    display:none;
+  }
+  #MVtbSmallScreen{
+    display:inline;
+  }
+  #MVlegendFP{min-width:280px;}
+  .flat .MVselLabel .dijitButtonContents {max-width:150px;overflow:hidden;}
+}
+@media screen and (max-width: 640px), screen and (max-device-width: 640px){
+  body:after {
+    content:'smartphone';
+    display: none;
+  }
+  #MVtabContainer_splitter,#MVborderTabContainer_splitter, #MVtitle ,#MVtoolbar,#MVmainSite,#MVoverviewFrame,#MVmeasure,#MVkoord,#MVmassstabContainer {
+    display:none;
+  }
+  #MVtbSmartphone,#MVLegSmartphone, #MVtabContainer, #MVborderTabContainer{
+    display:inline;
+  }
+  #MVoverviewFrame {
+    top:50px;
+  }
+  #MVtabContainer, #MVborderTabContainer {
+    top:0 !important;
+    width:100%;
+    height:100%;
+  }
+  .MVmap {
+    width:100% !important;
+    height:100% !important;
+  }
+  .flat .MVselLabel .dijitButtonContents {max-width:200px;overflow:hidden;}
+  .flat .dojoxFloatingPaneCanvas {
+    max-width:none !important;
+    max-height:none !important;
+  }
+  .flat .tableFP .dojoxFloatingPaneCanvas {
+    max-width:none !important;
+    max-height:none !important;
+  }
+  #MVtableContent {
+    margin: 0 5px 20px 5px;
+  }
+  .recCloseBtn {display: inline;}
+}

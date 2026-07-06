@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Author: Unregistered/Creator: MappetizerCore 13.0.3 by uismedia (http://www.uismedia.de);30/11/2017 11:53:57-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:mvns="http://www.mappetizer.de" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="disable">
+  <style type="text/css"><![CDATA[.rubberb { vector-effect:non-scaling-stroke;pointer-events:none;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.rubberb { pointer-events:none;stroke-width:31.412;stroke:black;shape-rendering:optimizeSpeed}
+}
+.rect { vector-effect:non-scaling-stroke;fill:#C29B69;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed}
+]]></style>
+  <rect id="overback" x="0" y="0" width="100%" height="100%" style="fill:moccasin;stroke:none" pointer-events="none" onmousemove="parent.mv_Overview.doOverPan(evt);" onmouseup="parent.mv_Overview.endOverPan();" onmouseout="parent.mv_Overview.endOverPan();" />
+  <svg id="overview" width="150" height="318" viewBox="0 0 4711.834 10000.01" preserveAspectRatio="xMinYMin">
+    <g xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+      <image xlink:href="../images/ov1153570570.jpg" x="0" y="0" width="4711.824" height="10000" style="pointer-events:none" />
+    </g>
+    <line id="crossVertical" display="none" class="rubberb" x1="0" y1="0" x2="0" y2="10000" />
+    <line id="crossHorizontal" display="none" class="rubberb" x1="0" y1="0" x2="4711.824" y2="0" />
+    <rect id="overrect" fill-opacity="0.5" stroke-opacity="1" class="rect" x="0" y="0" width="4711.824" height="10000" pointer-events="all" onmousedown="parent.mv_Overview.beginOverPan(evt);" />
+  </svg>
+</svg>

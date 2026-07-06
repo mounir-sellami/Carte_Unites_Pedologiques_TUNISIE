@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Author: Unregistered/Creator: MappetizerCore 13.0.3 by uismedia (http://www.uismedia.de);30/11/2017 11:53:57-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:mvns="http://www.mappetizer.de" xmlns:xlink="http://www.w3.org/1999/xlink" width="114" height="209">
+  <style type="text/css"><![CDATA[
+.normal { font-family:Arial,Helvetica,sans-serif;font-size:8pt;pointer-events:none }
+.th2leg0LEG { fill:khaki;shape-rendering:crispEdges }
+.th2leg1LEG { fill:#fefe00;shape-rendering:crispEdges }
+.th2leg2LEG { fill:#b2e4e4;shape-rendering:crispEdges }
+.th2leg3LEG { fill:#f0dbfe;shape-rendering:crispEdges }
+.th2leg4LEG { fill:#ffc7ae;shape-rendering:crispEdges }
+.th2leg5LEG { fill:#d89a69;shape-rendering:crispEdges }
+.th2leg6LEG { fill:#febdd1;shape-rendering:crispEdges }
+.th2leg7LEG { fill:#c2fbfe;shape-rendering:crispEdges }
+.th2leg8LEG { fill:#66bb10;shape-rendering:crispEdges }
+.th2leg9LEG { fill:#b7df86;shape-rendering:crispEdges }
+.th2leg10LEG { fill:#9b9cdb;shape-rendering:crispEdges }
+.th2leg11LEG { fill:#ff8b59;shape-rendering:crispEdges }
+.th2leg12LEG { fill:#a5a5a5;shape-rendering:crispEdges }
+]]></style>
+  <g id="legth2">
+    <rect x="2" y="1" width="24" height="12" class="th2leg0LEG" />
+    <text x="36" y="10" class="normal">LEPTOSOL</text>
+    <rect x="2" y="17" width="24" height="12" class="th2leg1LEG" />
+    <text x="36" y="26" class="normal">REGOSOL</text>
+    <rect x="2" y="33" width="24" height="12" class="th2leg2LEG" />
+    <text x="36" y="42" class="normal">FLUVISOL</text>
+    <rect x="2" y="49" width="24" height="12" class="th2leg3LEG" />
+    <text x="36" y="58" class="normal">VERTISOL</text>
+    <rect x="2" y="65" width="24" height="12" class="th2leg4LEG" />
+    <text x="36" y="74" class="normal">CAMBISOL</text>
+    <rect x="2" y="81" width="24" height="12" class="th2leg5LEG" />
+    <text x="36" y="90" class="normal">KASTANOZEM</text>
+    <rect x="2" y="97" width="24" height="12" class="th2leg6LEG" />
+    <text x="36" y="106" class="normal">LUVISOL</text>
+    <rect x="2" y="113" width="24" height="12" class="th2leg7LEG" />
+    <text x="36" y="122" class="normal">GYPSISOL</text>
+    <rect x="2" y="129" width="24" height="12" class="th2leg8LEG" />
+    <text x="36" y="138" class="normal">SOLONCHAK</text>
+    <rect x="2" y="145" width="24" height="12" class="th2leg9LEG" />
+    <text x="36" y="154" class="normal">SOLONETZ</text>
+    <rect x="2" y="161" width="24" height="12" class="th2leg10LEG" />
+    <text x="36" y="170" class="normal">GLEYSOL</text>
+    <rect x="2" y="177" width="24" height="12" class="th2leg11LEG" />
+    <text x="36" y="186" class="normal">CALSISOL</text>
+    <rect x="2" y="193" width="24" height="12" class="th2leg12LEG" />
+    <text x="36" y="202" class="normal">ND</text>
+  </g>
+</svg>

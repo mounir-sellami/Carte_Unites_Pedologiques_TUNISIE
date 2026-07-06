@@ -1,0 +1,268 @@
+﻿<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=10"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Unregistered">
+<meta name="generator" content="Mappetizer for ArcGIS 13.0.3 by uismedia (http://www.uismedia.de)">
+<meta name="date" content="31/05/2019 11:54:28">
+<meta name="description" content="This is a Web Mapping solution created with Mappetizer for ArcGIS. ">
+<meta name="keywords" content="Mappetizer, uismedia, SVG, ArcGIS">
+<title>Carte des unités pédologiques (WRB) de la Tunisie au 1 / 1 000 000</title>
+<link rel="stylesheet" href="./dojoroot/themes/flat/flat.css">
+<link rel="stylesheet" href="./dojoroot/dojox/layout/resources/FloatingPane.css">
+<link rel="stylesheet" href="./dojoroot/dojox/layout/resources/ResizeHandle.css">
+<link rel="stylesheet" href="./dojoroot/dojox/image/resources/Lightbox.css">
+<script src="./dojoroot/dojo/dojo.js" type="text/javascript" data-dojo-config="locale:'fr', parseOnLoad: false"></script>
+<link rel = "stylesheet" href="./font-awesome/css/font-awesome.min.css">
+<link href ='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="embfiles/style.css">
+<script type="text/javascript">
+var GB_ROOT_DIR = "greybox/";
+</script>
+<link href="greybox/gb_styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="greybox/AJS.js"></script>
+<script type="text/javascript" src="greybox/AJS_fx.js"></script>
+<script type="text/javascript" src="greybox/gb_scripts.js"></script>
+<script src="embfiles/syslib.js" type="text/javascript"></script>
+<script src="embfiles/tools.js" type="text/javascript"></script>
+<script src="embfiles/table.js" type="text/javascript"></script>
+<script src="embfiles/variables.js" type="text/javascript" charset="UTF-8"></script>
+<script src="embfiles/selrecords.js" type="text/javascript"></script>
+<script src="embfiles/identify.js" type="text/javascript"></script>
+<script src="embfiles/query.js" type="text/javascript"></script>
+<script type="text/javascript"></script>
+
+</head>
+<body id="MVhtmlBody" class="flat" style="margin:0px;visibility:visible">
+<div id="MVpreloader">
+<section class="preloader">
+<p class="preloaderIn" style="font-size:1.5em;">Carte des unités pédologiques (WRB) de la Tunisie au 1 / 1 000 000</p>
+<i class="preloaderIn fa fa-spinner fa-spin fa-4x fa-fw"></i>
+</section>
+</div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th0Store" data-dojo-props="url:'./embfiles/th0_json.js'"></div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th2Store" data-dojo-props="url:'./embfiles/th2_json.js'"></div>
+
+<!-- Design -->
+<div id="MVborderContainer" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design:'headline', gutters:false">
+<div id="MVtitle" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'">
+<h1>Carte des unités pédologiques (WRB) de la Tunisie au 1 / 1 000 000</h1>
+</div>
+<div id="MVtabContainer" data-dojo-type="dijit/layout/AccordionContainer"  data-dojo-props="region:'left', tabStrip: false, persist:false, useMenu: false, splitter:true" >
+<div id="MVlegendContainer" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Légende'"></div>
+<div id="MVidentifyContainer" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Informations localisées'">
+<div id="MVidentifyClose"><button data-dojo-type="dijit/form/Button" type="button" data-dojo-props="iconClass:'fa fa-times MVfa-but', showLabel:false, onClick:function() { mv_deleteTPs(mv_Map.Identifys); }">Fermer la fenêtre</button></div>
+<div id="MVidentifyHint">Cliquez avec la souris sur la carte.</div>
+<div id="MVidentifyList"></div>
+</div>
+<div id="MVtoolsContainer" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Tools'">
+<div id="MVmassstabContainer" style="margin-top:10px;margin-bottom:10px">
+Echelle 1:&nbsp;&nbsp;
+<div id="MVmassstab" class="MVselect MVselLabel" style="width:calc(100% - 80px);" data-dojo-type="dijit/form/ComboBox" data-dojo-props="hasDownArrow:false, onChange:function(){ mv_zoomToScale(this.value); }" >
+  <option>1000</option>
+  <option>5000</option>
+  <option>10000</option>
+  <option>25000</option>
+  <option>50000</option>
+  <option>100000</option>
+  <option>250000</option>
+  <option>500000</option>
+  <option>750000</option>
+  <option>1000000</option>
+  <option>5000000</option>
+  <option>10000000</option>
+</div>
+</div>
+</div>
+<div id="MVqueryContainer" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Requêtes'"></div>
+<div id="MVinfoContainer" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Mentions Légales'" href="embfiles/info.html"></div>
+<div id="MVhelpContainer" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="iconClass:'fa fa-question fa-lg', tooltip:'Aide'" href="embfiles/help.html"></div>
+</div>
+<div id="MVmainSite" data-dojo-type="dijit/layout/LayoutContainer"  data-dojo-props="region:'center', design:'headline'">
+<div id="MVtoolbar" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'">
+<div class="MVtbButton" data-dojo-type="dijit/form/ToggleButton" id="MVtoolbar.zoomin" data-dojo-props="iconClass:'fa fa-plus fa-lg', showLabel:false">Zoom avant</div>
+<div class="MVtbButton" data-dojo-type="dijit/form/ToggleButton" id="MVtoolbar.zoomout" data-dojo-props="iconClass:'fa fa-minus fa-lg', showLabel:false">Zoom arrière</div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" id="MVtoolbar.fullextent" data-dojo-props="iconClass:'fa fa-globe fa-lg', showLabel:false">De retour à l'affichage original</div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" id="MVtoolbar.previousextent" data-dojo-props="iconClass:'fa fa-arrow-left fa-lg', showLabel:false">Revenir à l’affichage précédent</div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" id="MVtoolbar.nextextent" data-dojo-props="iconClass:'fa fa-arrow-right fa-lg', showLabel:false">Aller à l’affichage suivant</div>
+<div id="MVtbSmallScreen">
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" id="MVtoolbar.legend" data-dojo-props="iconClass:'fa fa-list fa-lg', showLabel:false">Légende</div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" id="MVtoolbar.query" data-dojo-props="iconClass:'fa fa-search fa-lg', showLabel:false">Requêtes</div>
+<div class="MVtbButton" data-dojo-type="dijit/form/DropDownButton"  id="MVtoolbar.help_info" data-dojo-props="iconClass:'fa fa-question fa-lg', showLabel:false">
+<label for="MVtoolbar.help_info">Aide</label>
+<div data-dojo-type="dijit/DropDownMenu">
+<div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'fa-fw fa fa-question fa-lg', onClick:function(){ mv_showHelp(this); }">Aide</div>
+<div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'fa-fw fa fa-info fa-lg', onClick:function(){ mv_showInfo(this); }">Mentions Légales</div>
+</div>
+</div>
+</div>
+<div class="MVtbButton" data-dojo-type="dijit/form/DropDownButton"  id="MVtoolbar.measure" data-dojo-props="iconClass:'fa fa-crop fa-lg', showLabel:false">
+<label for="MVtoolbar.measure">Mesure de distance</label>
+<div data-dojo-type="dijit/DropDownMenu">
+<div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitMapViewIcon dijitMapViewIconLine', onClick:function(){ mv_measureTool('Line'); }"></div>
+<div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'dijitMapViewIcon dijitMapViewIconArea', onClick:function(){ mv_measureTool('Polygon'); }"></div>
+</div>
+</div>
+<div class="MVtbButton" data-dojo-type="dijit/form/ToggleButton" id="MVtoolbar.koord" data-dojo-props="iconClass:'fa fa-crosshairs fa-lg', showLabel:false">Affichage des coordonnées</div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" id="MVtoolbar.print" data-dojo-props="iconClass:'fa fa-print fa-lg', showLabel:false">Imprimer</div>
+<div class="MVtbButton" style="position:absolute;right:25px;top:0px" data-dojo-type="dijit/form/DropDownButton" id="MVtoolbar.share" data-dojo-props="iconClass:'fa fa-share-alt fa-lg', showLabel:false">
+<label for="MVtoolbar.share">Share map</label>
+<div data-dojo-type="dijit/layout/ContentPane" style="border:2px solid darkgrey">
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fa fa-envelope fa-lg', onClick:function(){ mv_share('email'); }" ></div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fa fa-facebook-official fa-lg', onClick:function(){ mv_share('facebook'); }"></div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fa fa-google-plus fa-lg', onClick:function(){ mv_share('google+'); }" ></div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fa fa-twitter fa-lg', onClick:function(){ mv_share('twitter'); }"></div>
+</div>
+</div>
+<!--[IF !IE]> -->
+<div style="position:absolute;right:0px;top:0px" class="MVtbButton" data-dojo-type="dijit/form/Button" id="MVtoolbar.fullscreen" data-dojo-props="iconClass:'fa fa-arrows-alt fa-lg', showLabel:false">Mode plein écran.</div>
+<!-- <![ENDIF]-->
+<span class="MVtoolbarSeparator"></span>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'Gouvernorats', searchAttr: 'name', store: th0Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f2','th0',true,true,false,true); }"></select>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'Unité pédologique principale', searchAttr: 'name', store: th2Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f20','th2',true,true,false,true); }"></select>
+</div>
+<div id="MVmap" class="MVmap" data-dojo-type="dijit/layout/ContentPane"  data-dojo-props="region:'center'">
+<div id="MVoverviewFrame" data-dojo-type="dijit/TitlePane" data-dojo-props="title:'vue générale',open:true">
+  <div id="MVoverview"></div>
+</div>
+<div id="MVtbSmartphone">
+<div class="MVtbButtonMob" data-dojo-type="dijit/form/Button" id="MVtbSmartphone.zoomin" data-dojo-props="iconClass:'fa fa-plus MVfa-but', showLabel:false, onClick:function() { mv_zoomInButton(); }">Zoom avant</div>
+<div class="MVtbButtonMob" data-dojo-type="dijit/form/Button" id="MVtbSmartphone.zoomout" data-dojo-props="iconClass:'fa fa-minus MVfa-but', showLabel:false, onClick:function() { mv_zoomOutButton(); }">Zoom arrière</div>
+<div class="MVtbButtonMob" data-dojo-type="dijit/form/Button" id="MVtbSmartphone.fullextent" data-dojo-props="iconClass:'fa fa-globe MVfa-but', showLabel:false, onClick:function() { mv_fullExtent(); }">De retour à l'affichage original</div>
+<div class="MVtbButtonMob" data-dojo-type="dijit/form/DropDownButton" id="MVtbSmartphone.share" data-dojo-props="iconClass:'fa fa-share-alt MVfa-but', showLabel:false">
+<label for="MVtbSmartphone.share">Share map</label>
+<div data-dojo-type="dijit/layout/ContentPane" style="border:2px solid darkgrey">
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fa fa-envelope MVfa-but', onClick:function(){ mv_share('email'); }" ></div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fa fa-facebook-official MVfa-but', onClick:function(){ mv_share('facebook'); }"></div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fa fa-google-plus MVfa-but', onClick:function(){ mv_share('google+'); }" ></div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fa fa-twitter MVfa-but', onClick:function(){ mv_share('twitter'); }"></div>
+</div>
+</div>
+<div class="MVtbButtonMob" data-dojo-type="dijit/form/ToggleButton" id="MVtbSmartphone.overview" data-dojo-props="iconClass:'fa fa-object-ungroup MVfa-but', showLabel:false, onClick:function() { mv_showOverview(this,'#FFEDCD'); }">vue générale</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Content -->
+<div id="MVidentifyFPContainer"></div>
+<div id="MVlegendFPContainer"></div>
+<div id="MVlegendContentContainer" style="display:none">
+<div id="MVlegendContent">
+<div id="MVth0Legend" class="MVlegC">
+<div id="th0Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'fa fa-eye fa-lg',showLabel:false"></div>
+<div class="MVleg" data-dojo-type="dijit/TitlePane" data-dojo-props="title:'Gouverorats'">
+<div id="th0Legend" >
+</div>
+</div>
+<div style="position:absolute;top:5px;right:0px">
+<div class="MVlegendButton" data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){mv_showTable('th0');},iconClass:'fa fa-th MVfa-but',showLabel:false">Table attributaire</div>
+
+</div>
+</div>
+<div id="MVth1Legend" class="MVlegC">
+<div id="th1Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'fa fa-eye fa-lg',showLabel:false"></div>
+<div class="MVleg" data-dojo-type="dijit/TitlePane" data-dojo-props="title:'Statistiques pédologiques (en % de la superficie du gouvernorat) '">
+<div id="th1Legend" >
+</div>
+</div>
+<div style="position:absolute;top:5px;right:0px">
+<div class="MVlegendButton" data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){mv_showTable('th1');},iconClass:'fa fa-th MVfa-but',showLabel:false">Table attributaire</div>
+
+</div>
+</div>
+<div id="MVth2Legend" class="MVlegC">
+<div id="th2Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'fa fa-eye fa-lg',showLabel:false"></div>
+<div class="MVleg" data-dojo-type="dijit/TitlePane" data-dojo-props="title:'Carte des unités pédologiques (WRB)'">
+<div id="th2Legend" >
+</div>
+</div>
+<div style="position:absolute;top:5px;right:0px">
+<div class="MVlegendButton" data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){mv_showTable('th2');},iconClass:'fa fa-th MVfa-but',showLabel:false">Table attributaire</div>
+
+</div>
+</div>
+<div style="margin:10px 0 10px 0">
+<P>&nbsp;</P>
+<P><SPAN style='FONT-SIZE: 8pt; FONT-FAMILY: "Helvetica",sans-serif; BACKGROUND: white; COLOR: black; mso-fareast-font-family: "Times New Roman"; mso-fareast-language: FR'>Crée par Mounir SELLAMI&nbsp;</SPAN><SPAN style='FONT-SIZE: 8pt; FONT-FAMILY: "Helvetica",sans-serif; BACKGROUND: white; COLOR: black; mso-fareast-font-family: "Times New Roman"; mso-fareast-language: FR'>(Expertise en pédologie : M. Ahmed SOUISSI&nbsp;</SPAN><SPAN style='FONT-SIZE: 8pt; FONT-FAMILY: "Helvetica",sans-serif; COLOR: black; mso-fareast-font-family: "Times New Roman"; mso-fareast-language: FR'><BR><BR><SPAN style="BACKGROUND: white">Géographe/Géomaticien,</SPAN><BR><BR><SPAN style='FONT-SIZE: 8pt; FONT-FAMILY: "Helvetica",sans-serif; COLOR: black; mso-fareast-font-family: "Times New Roman"; mso-fareast-language: FR'><BR><SPAN style="BACKGROUND: white">Chef de service "Cartographie de l'érosion",</SPAN><BR><BR><SPAN style="BACKGROUND: white">Chef de travaux de laboratoire SIG</SPAN><BR><BR><SPAN style="BACKGROUND: white">Direction des Ressources en Sols (DRS)</SPAN><BR><BR><SPAN style="BACKGROUND: white">Direction Générale d'Aménagement</SPAN><BR><SPAN style="BACKGROUND: white">et de Conservation des Terres Agricoles (DG/ACTA)</SPAN><BR><BR><SPAN style="BACKGROUND: white">Ministère de l'Agriculture, des Ressources Hydrauliques </SPAN></SPAN><SPAN style='FONT-SIZE: 8pt; FONT-FAMILY: "Helvetica",sans-serif; COLOR: black; mso-fareast-font-family: "Times New Roman"; mso-fareast-language: FR'><SPAN style="BACKGROUND: white">et de la Pêche</SPAN><BR><BR><SPAN style="BACKGROUND: white">Tél. : ( + 216 ) 22 72 34 86</SPAN><BR><SPAN style="BACKGROUND: white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 92 61 73 39</SPAN><BR><BR><SPAN style="BACKGROUND: white">E-mail : mounir_sellami@yahoo.fr</SPAN></SPAN></P>
+</div>
+</div>
+</div>
+<div id="MVqueryFPContainer"></div>
+<div id="MVqueryContentContainer" style="display:none">
+<div id="MVqueryContent">
+<form name="MVqueryLayer" style="margin-top:10px;margin-right:3px;">
+<select data-dojo-type="dijit/form/Select" class="MVselect MVselLabel" style="width:100%;" data-dojo-props="name:'MVlistQueryLayer', onChange:function(){ mv_Query.layerSelect(this.value);}">
+<option disabled="disabled" value="" selected>Layer...</option>
+<option value="th0">Gouverorats</option>
+<option value="th1">Statistiques pédologiques (en % de la superficie du gouvernorat) </option>
+<option value="th2">Carte des unités pédologiques (WRB)</option>
+</select>
+</form>
+<form name="MVquery" onsubmit="return mv_Query.doQuery(false);">
+<table class="query" style="width:100%">
+<tr class="query">
+<td class="query" style="width:33.33%">Champs</td>
+<td class="query" style="width:135px">Opérateurs</td>
+<td class="query" style="width:*">Valeurs</td>
+</tr>
+<tr class="query">
+<td class="query">
+<div id="MVqueryFields"></div>
+</td>
+<td class="query">
+<nobr>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' = '); }">=</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' <> '); }">&lt;&gt;</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' like '); }">like</button></span>
+</nobr><br>
+<nobr>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' > '); }">&gt;</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' >= '); }">&gt;=</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' and '); }">and</button></span>
+</nobr><br>
+<nobr>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' < '); }">&lt;</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' <= '); }">&lt;=</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' or '); }">or</button></span>
+</nobr><br>
+<nobr>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' ( '); }">(</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' ) '); }">)</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' % '); }">%</button></span>
+</nobr>
+</td>
+<td class="query">
+<div id="MVqueryValues"></div>
+</td>
+</tr>
+<tr class="query">
+<td colspan="3" class="query" style="vertical-align:bottom">&nbsp;<br />
+
+Expression de la requête&nbsp;&nbsp;<a href="javascript:mv_Query.help();"><i class="fa fa-question MVfa-but"></i></a></td>
+</tr>
+<tr class="query">
+<td colspan="3" class="query">
+<input class="MVqInput" data-dojo-type="dijit/form/TextBox" data-dojo-props="name:'TextEingabe', onChange:function(){ mv_Query.test(); }, onClick:function(){ mv_Query.writeStatus(); }">
+<input type="hidden" name="SQLEingabe" value=""><br />&nbsp;<br />
+<nobr>
+<button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.doQuery(true); }">Sélectionner et zoomer</button>
+<button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.doQuery(false); }" >Sélectionner</button>
+<button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.clear(); }" >Mise à zéro</button>
+</nobr>
+</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+<div id="MVMeasureContentContainer" style="display:none">
+<div data-dojo-type="dijit/form/ToggleButton" id="MVmeasureToolbar.line" data-dojo-props="iconClass:'dijitMapViewIcon dijitMapViewIconLine', showLabel:false, checked:'checked'">Ligne</div>
+<div data-dojo-type="dijit/form/ToggleButton" id="MVmeasureToolbar.area" data-dojo-props="iconClass:'dijitMapViewIcon dijitMapViewIconArea', showLabel:false">L'aire</div>
+<div data-dojo-type="dijit/form/ToggleButton" id="MVmeasureToolbar.sum" data-dojo-props="iconClass:'dijitMapViewIcon dijitMapViewIconSum', showLabel:false">Total</div>
+<div data-dojo-type="dijit/form/Button" id="MVmeasureToolbar.clear" data-dojo-props="iconClass:'fa fa-times MVfa-but', showLabel:false">Mise à zéro</div>
+</div>
+</body>
+</html>

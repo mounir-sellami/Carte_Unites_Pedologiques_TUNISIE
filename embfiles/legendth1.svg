@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Author: Unregistered/Creator: MappetizerCore 13.0.3 by uismedia (http://www.uismedia.de);30/11/2017 11:53:57-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:mvns="http://www.mappetizer.de" xmlns:xlink="http://www.w3.org/1999/xlink" width="114" height="246">
+  <style type="text/css"><![CDATA[
+.normal { font-family:Arial,Helvetica,sans-serif;font-size:8pt;pointer-events:none }
+.th1leg0-0LEG { fill:khaki;stroke-width:2;stroke:#eb001b }
+.th1leg0-1LEG { fill:#fefe00;stroke-width:2;stroke:#eb001b }
+.th1leg0-2LEG { fill:#b2e4e4;stroke-width:2;stroke:#eb001b }
+.th1leg0-3LEG { fill:#f0dbfe;stroke-width:2;stroke:#eb001b }
+.th1leg0-4LEG { fill:#ffc7ae;stroke-width:2;stroke:#eb001b }
+.th1leg0-5LEG { fill:#d89a69;stroke-width:2;stroke:#eb001b }
+.th1leg0-6LEG { fill:#febdd1;stroke-width:2;stroke:#eb001b }
+.th1leg0-7LEG { fill:#c2fbfe;stroke-width:2;stroke:#eb001b }
+.th1leg0-8LEG { fill:#66bb10;stroke-width:2;stroke:#eb001b }
+.th1leg0-9LEG { fill:#b7df86;stroke-width:2;stroke:#eb001b }
+.th1leg0-10LEG { fill:#9b9cdb;stroke-width:2;stroke:#eb001b }
+.th1leg0-11LEG { fill:#ff8b59;stroke-width:2;stroke:#eb001b }
+.th1leg0-12LEG { fill:#a5a5a5;stroke-width:2;stroke:#eb001b }
+.th1leg1LEG { fill:khaki;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+.th1leg2LEG { fill:#fefe00;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+.th1leg3LEG { fill:#b2e4e4;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+.th1leg4LEG { fill:#f0dbfe;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+.th1leg5LEG { fill:#ffc7ae;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+.th1leg6LEG { fill:#d89a69;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+.th1leg7LEG { fill:#febdd1;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+.th1leg8LEG { fill:#c2fbfe;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+.th1leg9LEG { fill:#66bb10;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+.th1leg10LEG { fill:#b7df86;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+.th1leg11LEG { fill:#9b9cdb;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+.th1leg12LEG { fill:#ff8b59;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+.th1leg13LEG { fill:#a5a5a5;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+]]></style>
+  <g id="legth1">
+    <path class="th1leg0-0LEG" d="M 18 16 L 34 16 A 16 16 0 0 0 32.167 8.564 Z" />
+    <path class="th1leg0-1LEG" d="M 18 16 L 32.167 8.564 A 16 16 0 0 0 27.089 2.832 Z" />
+    <path class="th1leg0-2LEG" d="M 18 16 L 27.089 2.832 A 16 16 0 0 0 19.929 0.117 Z" />
+    <path class="th1leg0-3LEG" d="M 18 16 L 19.929 0.117 A 16 16 0 0 0 12.326 1.04 Z" />
+    <path class="th1leg0-4LEG" d="M 18 16 L 12.326 1.04 A 16 16 0 0 0 6.024 5.39 Z" />
+    <path class="th1leg0-5LEG" d="M 18 16 L 6.024 5.39 A 16 16 0 0 0 2.465 12.171 Z" />
+    <path class="th1leg0-6LEG" d="M 18 16 L 2.465 12.171 A 16 16 0 0 0 2.465 19.829 Z" />
+    <path class="th1leg0-7LEG" d="M 18 16 L 2.465 19.829 A 16 16 0 0 0 6.024 26.61 Z" />
+    <path class="th1leg0-8LEG" d="M 18 16 L 6.024 26.61 A 16 16 0 0 0 12.326 30.96 Z" />
+    <path class="th1leg0-9LEG" d="M 18 16 L 12.326 30.96 A 16 16 0 0 0 19.929 31.883 Z" />
+    <path class="th1leg0-10LEG" d="M 18 16 L 19.929 31.883 A 16 16 0 0 0 27.089 29.168 Z" />
+    <path class="th1leg0-11LEG" d="M 18 16 L 27.089 29.168 A 16 16 0 0 0 32.167 23.436 Z" />
+    <path class="th1leg0-12LEG" d="M 18 16 L 32.167 23.436 A 16 16 0 0 0 34 16 Z" />
+    <rect x="2" y="39" width="24" height="12" class="th1leg1LEG" />
+    <text x="36" y="48" class="normal">LEPTOSOL</text>
+    <rect x="2" y="55" width="24" height="12" class="th1leg2LEG" />
+    <text x="36" y="64" class="normal">REGOSOL</text>
+    <rect x="2" y="71" width="24" height="12" class="th1leg3LEG" />
+    <text x="36" y="80" class="normal">FLUVISOL</text>
+    <rect x="2" y="87" width="24" height="12" class="th1leg4LEG" />
+    <text x="36" y="96" class="normal">VERTISOL</text>
+    <rect x="2" y="103" width="24" height="12" class="th1leg5LEG" />
+    <text x="36" y="112" class="normal">CAMBISOL</text>
+    <rect x="2" y="119" width="24" height="12" class="th1leg6LEG" />
+    <text x="36" y="128" class="normal">KASTANOZEM</text>
+    <rect x="2" y="135" width="24" height="12" class="th1leg7LEG" />
+    <text x="36" y="144" class="normal">LUVISOL</text>
+    <rect x="2" y="151" width="24" height="12" class="th1leg8LEG" />
+    <text x="36" y="160" class="normal">GYPSISOL</text>
+    <rect x="2" y="167" width="24" height="12" class="th1leg9LEG" />
+    <text x="36" y="176" class="normal">SOLONCHAK</text>
+    <rect x="2" y="183" width="24" height="12" class="th1leg10LEG" />
+    <text x="36" y="192" class="normal">SOLONETZ</text>
+    <rect x="2" y="199" width="24" height="12" class="th1leg11LEG" />
+    <text x="36" y="208" class="normal">GLEYSOL</text>
+    <rect x="2" y="215" width="24" height="12" class="th1leg12LEG" />
+    <text x="36" y="224" class="normal">CALSISOL</text>
+    <rect x="2" y="231" width="24" height="12" class="th1leg13LEG" />
+    <text x="36" y="240" class="normal">ND</text>
+  </g>
+</svg>
